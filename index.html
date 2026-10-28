@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>2318-2332 S Amherst Ave | Development Site BOV | LAAA Team</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,Helvetica,sans-serif;background:#f4f5f7;color:#1a1a1a;font-size:15px;line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{background:linear-gradient(135deg,#0a2540,#143b6b);color:#fff;border-bottom:4px solid #b8985a;padding:44px 0 36px}
+.eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:12px;color:#b8985a;font-weight:700;margin-bottom:10px}
+header h1{font-size:34px;font-weight:700;line-height:1.15;margin-bottom:8px}
+header .subtitle{font-size:16px;color:#cbd5e1;margin-bottom:18px}
+header .meta{font-size:13px;color:#9fb3cd;display:flex;flex-wrap:wrap;gap:6px 22px}
+nav.toc{background:#0a2540;border-bottom:1px solid #1a365a;position:sticky;top:0;z-index:50;box-shadow:0 2px 4px rgba(0,0,0,0.15)}
+nav.toc .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:0;padding:0 24px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav.toc a{color:#cbd5e1;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:0.6px;text-transform:uppercase;padding:14px 16px;border-bottom:2px solid transparent;transition:color 0.15s,border-color 0.15s;white-space:nowrap}
+nav.toc a:hover{color:#b8985a;border-bottom-color:#b8985a}
+nav.toc a.first{padding-left:0}
+@media (max-width:760px){nav.toc a{font-size:11px;padding:12px 10px;letter-spacing:0.4px}}
+section[id]{scroll-margin-top:60px}
+main{padding:28px 0 8px}
+section.card{background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(10,37,64,0.08);padding:28px 30px;margin-bottom:26px}
+section.card h2{color:#0a2540;font-size:22px;padding-bottom:10px;border-bottom:2px solid #b8985a;margin-bottom:18px}
+section.card h3{color:#0a2540;font-size:16px;margin:22px 0 10px}
+p{margin-bottom:12px}
+.stat-band{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:18px 0 6px}
+.stat{background:#f8fafc;border:1px solid #e6e9ef;border-left:3px solid #b8985a;border-radius:6px;padding:12px 14px}
+.stat .l{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#666;margin-bottom:4px}
+.stat .v{font-size:18px;font-weight:700;color:#0a2540;line-height:1.25}
+.stat .s{font-size:12px;color:#666;margin-top:2px}
+.hero-frame{border-radius:8px;overflow:hidden;margin:6px 0 16px;background:#0a2540;aspect-ratio:16/9}
+.hero-frame img{width:100%;height:100%;object-fit:contain;display:block}
+.img-frame{border-radius:8px;overflow:hidden;background:#0a2540}
+.img-frame img{width:100%;height:100%;object-fit:contain;display:block}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0}
+.two-col .img-frame.sv{aspect-ratio:8/5}
+.caption{font-size:12px;color:#666;margin-top:6px}
+.spec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:16px 0}
+.spec{background:#f8fafc;border:1px solid #e6e9ef;border-radius:6px;padding:12px 16px;font-size:13.5px}
+.spec b{display:block;color:#0a2540;font-size:12px;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:3px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:14px 0 6px}
+th{background:#0a2540;color:#fff;text-align:left;padding:10px 12px;font-size:12px;text-transform:uppercase;letter-spacing:0.6px;white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid #e6e9ef;vertical-align:top}
+tr:nth-child(even) td{background:#f8fafc}
+td.num,th.num{text-align:right;white-space:nowrap}
+.psf{font-weight:700;color:#0a2540;white-space:nowrap}
+.psf.hot{color:#c0392b}
+tr.avg td{background:#eef2f7;font-weight:700;color:#0a2540;border-top:2px solid #0a2540}
+.table-scroll{overflow-x:auto}
+.b-closed{background:#e6f4ea;color:#1e7e34;border-radius:4px;padding:2px 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;white-space:nowrap}
+td.addr{white-space:nowrap}
+.b-laaa{display:inline-block;background:#b8985a;color:#fff;border-radius:10px;padding:1px 8px;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;white-space:nowrap;margin-left:6px;vertical-align:1px}
+.fn{font-size:12px;color:#666;margin-top:8px}
+.path-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:18px 0 8px}
+.path-card{border:1px solid #e6e9ef;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.path-card .ph{padding:16px 18px;color:#fff;min-height:128px;box-sizing:border-box}
+.path-card.pa .ph{background:linear-gradient(135deg,#0a2540,#143b6b)}
+.path-card.pb .ph{background:linear-gradient(135deg,#3a4a6b,#5a6f9a)}
+.path-card.pc .ph{background:linear-gradient(135deg,#5a4a1f,#8a6f2a)}
+.path-card.pd .ph{background:linear-gradient(135deg,#1f5e3a,#2f8a55)}
+.path-card.pe .ph{background:linear-gradient(135deg,#1f4e5e,#2f7a8a)}
+.path-card.pf .ph{background:linear-gradient(135deg,#4a2f5e,#6f4a8a)}
+.path-card.pg .ph{background:linear-gradient(135deg,#2d6a4f,#40916c)}
+.path-card.ph2 .ph{background:linear-gradient(135deg,#7a3b2e,#a0523d)}
+.path-card .ph .ptag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;opacity:.88;margin-bottom:6px}
+.path-card .ph .pname{font-size:18px;font-weight:700;line-height:1.2}
+.path-card .ph .punits{font-size:13px;opacity:.92;margin-top:4px}
+.path-card .pb-body{padding:16px 20px;font-size:13.5px;flex:1}
+.path-card .pb-body ul{margin:0 0 0 18px}
+.path-card .pb-body li{margin-bottom:7px;line-height:1.55}
+.path-card .pmetric{display:flex;justify-content:space-between;padding:9px 20px;border-top:1px solid #e6e9ef;font-size:12.5px}
+.path-card .pmetric .l{color:#666}
+.path-card .pmetric .v{font-weight:700;color:#0a2540}
+.info-callout{background:#f8fafc;border:1px solid #e6e9ef;border-left:4px solid #b8985a;border-radius:6px;padding:14px 18px;font-size:13.5px;margin:14px 0}
+.info-callout a{color:#8a6f2a;font-weight:700}
+.tk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:16px 0}
+.tk{background:#f8fafc;border:1px solid #e6e9ef;border-left:4px solid #b8985a;border-radius:6px;padding:16px 18px;font-size:13.5px}
+.tk .n{display:inline-block;background:#0a2540;color:#fff;border-radius:50%;width:24px;height:24px;line-height:24px;text-align:center;font-size:12px;font-weight:700;margin-bottom:8px}
+.tk b{color:#0a2540}
+.recommend{background:linear-gradient(135deg,#8a6f2a,#b8985a);border-radius:8px;color:#fff;padding:26px 28px;margin:18px 0}
+.recommend .r-eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700;opacity:.9;margin-bottom:6px}
+.recommend .r-band{font-size:30px;font-weight:800;line-height:1.2}
+.recommend .r-sub{font-size:14px;opacity:.95;margin-top:6px}
+.price-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0 4px}
+.pc-box{background:#f8fafc;border:1px solid #e6e9ef;border-radius:6px;padding:14px 16px}
+.pc-box .l{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#666;margin-bottom:4px}
+.pc-box .v{font-size:19px;font-weight:700;color:#0a2540}
+.pc-box .s{font-size:12px;color:#666;margin-top:3px}
+.plat-strip{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.plat{background:#f8fafc;border:1px solid #e6e9ef;border-radius:20px;padding:7px 16px;font-size:13px;font-weight:600;color:#0a2540;white-space:nowrap}
+.inv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:16px 0}
+a.inv-item{display:flex;flex-direction:column;background:#f8fafc;border:1px solid #e6e9ef;border-left:4px solid #b8985a;border-radius:6px;padding:16px 18px;text-decoration:none;color:#1a1a1a;transition:box-shadow .15s}
+a.inv-item:hover{box-shadow:0 3px 10px rgba(10,37,64,.18)}
+.inv-item .addr{font-weight:700;color:#0a2540;font-size:15px}
+.inv-item .city{font-size:12.5px;color:#666;margin-bottom:6px}
+.inv-item .price{font-size:17px;font-weight:800;color:#0a2540}
+.inv-item .facts{font-size:12.5px;color:#666;margin:3px 0 8px}
+.inv-item .desc{font-size:13px;line-height:1.5;flex:1}
+.inv-item .go{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;color:#8a6f2a;text-transform:uppercase;letter-spacing:.8px}
+.team-leaders{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
+.leader{background:#f8fafc;border:1px solid #e6e9ef;border-radius:8px;padding:22px;text-align:center}
+.headshot-img-lg{width:100px;height:100px;border-radius:50%;border:3px solid #b8985a;object-fit:cover;background:#0a2540;display:block;margin:0 auto 12px}
+.leader .nm{font-size:17px;font-weight:700;color:#0a2540}
+.leader .tt{font-size:13px;color:#666;margin:2px 0 8px}
+.leader .ct{font-size:13px;color:#1a1a1a}
+.team-roster{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
+.roster-card{background:#f8fafc;border:1px solid #e6e9ef;border-radius:8px;padding:14px 10px;text-align:center}
+.roster-card .headshot-img-lg{width:72px;height:72px;border-width:2px;margin-bottom:10px}
+.roster-card .nm{font-size:13.5px;font-weight:700;color:#0a2540;line-height:1.3}
+.roster-card .tt{font-size:11.5px;color:#666;margin-top:2px}
+footer{background:#0a2540;border-top:4px solid #b8985a;color:#9fb3cd;padding:30px 0;font-size:12.5px;margin-top:34px}
+footer .f-title{color:#fff;font-weight:700;font-size:14px;margin-bottom:6px}
+footer p{margin-bottom:10px;line-height:1.55}
+@media (max-width:760px){header h1{font-size:26px}.two-col{grid-template-columns:1fr}.team-leaders{grid-template-columns:1fr}section.card{padding:22px 18px}}
+@media (max-width:640px){header h1{font-size:22px}.recommend .r-band{font-size:24px}}
+.hl-banner{background:linear-gradient(135deg,#1f5e3a,#2f8a55);color:#fff;border-radius:8px;padding:18px 22px;margin:4px 0 18px;border-left:6px solid #b8985a}
+.hl-banner .t{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;opacity:.9;margin-bottom:4px}
+.hl-banner .h{font-size:20px;font-weight:800;line-height:1.3}
+.hl-banner .s{font-size:13.5px;opacity:.95;margin-top:6px}
+.hl-banner a{color:#fff;text-decoration:underline}
+.stat.green{border-left-color:#2f8a55;background:#eef7f1}
+header .badge{display:inline-block;background:#2f8a55;color:#fff;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border-radius:4px;padding:4px 10px;margin:0 6px 14px 0}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Broker Opinion of Value</div>
+    <h1>2318-2332 S Amherst Avenue</h1>
+    <div><span class="badge">114 Units Approved (TOC Tier 4)</span><span class="badge">800 ft to Expo/Bundy E Line</span></div>
+    <div class="subtitle">25,014 SF four-lot development site, RAS4-1VL, in the Exposition Corridor Transit Neighborhood Plan &middot; Sawtelle / West Los Angeles, CA 90064</div>
+    <div class="meta">
+      <span>Prepared for: Gantry</span>
+      <span>Prepared by: The LAAA Team &middot; Marcus &amp; Millichap</span>
+      <span>October 27, 2026</span>
+    </div>
+    <div class="hero-frame" style="margin:24px 0 0;border:1px solid rgba(184,152,90,.5)"><img src="images/hero_aerial.png" alt="Aerial view of 2318-2332 S Amherst Ave outlined in gold"></div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a class="first" href="#summary">Summary</a>
+    <a href="#subject">Subject</a>
+    <a href="#entitlement">Entitlement</a>
+    <a href="#pathways">Pathways</a>
+    <a href="#comps">Comps</a>
+    <a href="#takeaways">Takeaways</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#marketing">Marketing</a>
+    <a href="#listings">Listings</a>
+    <a href="#team">Team</a>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+
+<section class="card" id="summary">
+  <h2>Executive Summary</h2>
+  <div class="hl-banner">
+    <div class="t">Entitled Transit Site</div>
+    <div class="h">114 apartments approved, about 800 feet from the Expo/Bundy E Line station</div>
+    <div class="s">City Planning approved an 8-story, 114-unit building on the site under TOC Tier 4 (DIR-2024-179-TOC-VHCA). A buyer starts with a vested approval and a full planning set instead of starting entitlement from scratch.</div>
+  </div>
+  <p>2318, 2322, 2328 and 2332 S Amherst Avenue are four contiguous lots totaling <b>25,014 SF</b> (0.57 acres, per survey) in Sawtelle, each improved with a 1940s single-family home that will be delivered vacant. The site is zoned <b>RAS4-1VL</b> under the Exposition Corridor Transit Neighborhood Plan and sits about 0.15 miles from the Expo/Bundy station.</p>
+  <p>The approved project is an 8-story, 83-foot building with <b>114 apartments</b> (101 market rate and 13 Extremely Low Income) over two levels of subterranean parking, designed by KFA. We priced the site two ways: as entitled, and re-entitled under the newer programs the site now qualifies for, including Executive Directive 1, the City's Mixed Income Incentive Program and the state density bonus. We recommend a list price of <b>$7,500,000</b> ($299.83 per land SF, $65,789 per approved unit).</p>
+  <div class="stat-band">
+    <div class="stat"><div class="l">Combined Lot</div><div class="v">25,014 SF</div><div class="s">0.57 acres, four lots</div></div>
+    <div class="stat"><div class="l">Zoning</div><div class="v">RAS4-1VL</div><div class="s">Expo Corridor TNP</div></div>
+    <div class="stat green"><div class="l">Approved</div><div class="v">114 units</div><div class="s">101 market + 13 ELI</div></div>
+    <div class="stat green"><div class="l">Transit</div><div class="v">0.15 mi</div><div class="s">Expo/Bundy E Line</div></div>
+    <div class="stat"><div class="l">Re-Entitled</div><div class="v">~200-240</div><div class="s">100% affordable (ED 1)</div></div>
+    <div class="stat"><div class="l">List Price</div><div class="v">$7,500,000</div><div class="s">$299.83 per land SF</div></div>
+  </div>
+</section>
+
+<section class="card" id="subject">
+  <h2>Subject Property</h2>
+  <div class="hero-frame"><img src="images/hero_aerial.png" alt="Aerial view of the four lots outlined in gold"></div>
+  <div class="caption" style="margin-top:-8px;margin-bottom:12px">The four lots outlined in gold, fronting Amherst Avenue. New mid-rise construction is underway on the adjoining block.</div>
+  <div class="spec-grid">
+    <div class="spec"><b>Addresses</b>2318, 2322, 2328 and 2332 S Amherst Ave, Los Angeles, CA 90064</div>
+    <div class="spec"><b>APNs</b>4259-032-004, -005, -006 and -007 (lots 4 to 7, block 6, tract 6372)</div>
+    <div class="spec"><b>Lot Size</b>25,014 SF (0.57 acres) per survey; four lots of about 6,250 SF each</div>
+    <div class="spec"><b>Zoning</b>RAS4-1VL &middot; General Plan: Neighborhood Commercial</div>
+    <div class="spec"><b>Specific Plans</b>Exposition Corridor Transit Neighborhood Plan; West LA Transportation Improvement and Mitigation</div>
+    <div class="spec"><b>Transit</b>TOC Tier 4 (2332 is Tier 3) &middot; CHIP Transit Oriented Incentive Area 3 &middot; AB 2097 &middot; AB 2334 Very Low Vehicle Travel Area</div>
+    <div class="spec"><b>Existing Improvements</b>Four single-family homes built 1940 to 1948, to be delivered vacant</div>
+    <div class="spec"><b>Housing Element</b>Lower-income rezoning site (ZI-2534): ministerial approval and a minimum density. Replacement review applies to new filings</div>
+    <div class="spec"><b>Other Programs</b>ED 1 Eligible Site &middot; TCAC High Opportunity Area &middot; Residential Market Area: High &middot; Not RSO</div>
+    <div class="spec"><b>Jurisdiction</b>City of Los Angeles &middot; Council District 11 &middot; West Los Angeles Community Plan &middot; West LA Sawtelle Neighborhood Council</div>
+  </div>
+  <div class="img-frame" style="aspect-ratio:16/9"><img src="images/context_aerial.png" alt="Neighborhood aerial with the site outlined"></div>
+  <div class="caption">Neighborhood context: the site (outlined), about 800 feet southeast of the Expo/Bundy station.</div>
+</section>
+
+<section class="card" id="entitlement">
+  <h2>The Approved Project</h2>
+  <p>City Planning approved the project under Transit Oriented Communities Tier 4 in case <b>DIR-2024-179-TOC-VHCA</b>, with a vesting preliminary application under the Housing Crisis Act. The full planning set (KFA, 27 sheets) is available to qualified buyers.</p>
+  <div class="spec-grid">
+    <div class="spec"><b>Building</b>8 stories, 83 ft; Type IIIA over Type IA</div>
+    <div class="spec"><b>Units</b>114: 101 market rate and 13 Extremely Low Income (11%)</div>
+    <div class="spec"><b>Density</b>63 base units (25,014 / 400 SF) plus the 80% TOC Tier 4 increase</div>
+    <div class="spec"><b>Floor Area</b>106,020 SF (4.65:1 on 22,800 SF buildable area); 84,551 SF of residential net area</div>
+    <div class="spec"><b>Parking</b>113 stalls on two subterranean levels and the ground floor (none required)</div>
+    <div class="spec"><b>Incentives</b>+33 ft height, 25% open space reduction; 82 long-term bike spaces</div>
+  </div>
+  <h3>Approved Unit Mix</h3>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Type</th><th class="num">Units</th><th class="num">Total SF</th><th class="num">Avg SF</th></tr>
+    <tr><td>Studio</td><td class="num">31</td><td class="num">16,876</td><td class="num">544</td></tr>
+    <tr><td>Junior 1 Bedroom</td><td class="num">12</td><td class="num">8,069</td><td class="num">672</td></tr>
+    <tr><td>1 Bedroom</td><td class="num">36</td><td class="num">25,723</td><td class="num">715</td></tr>
+    <tr><td>1 Bedroom + Den</td><td class="num">2</td><td class="num">1,492</td><td class="num">746</td></tr>
+    <tr><td>2 Bedroom</td><td class="num">26</td><td class="num">27,277</td><td class="num">1,049</td></tr>
+    <tr><td>2-Story 2 Bedroom</td><td class="num">1</td><td class="num">662</td><td class="num">662</td></tr>
+    <tr><td>2-Story Live/Work</td><td class="num">5</td><td class="num">3,197</td><td class="num">639</td></tr>
+    <tr><td>3 Bedroom</td><td class="num">1</td><td class="num">1,254</td><td class="num">1,254</td></tr>
+    <tr class="avg"><td>Total</td><td class="num">114</td><td class="num">84,551</td><td class="num">742</td></tr>
+  </table>
+  </div>
+  <p class="fn">Source: KFA planning submittal, sheets G001, G010 and G013 (12/18/2023), and the ZIMAS case summary for DIR-2024-179-TOC-VHCA. Approval and expiration dates to be confirmed from the determination letter.</p>
+</section>
+
+<section class="card" id="pathways">
+  <h2>Development Pathways</h2>
+  <p>The approved TOC project is the baseline. Since it was filed, the site has also become eligible for programs that allow more units, at the cost of a new filing. Unit counts for Pathways B through D are planning-level estimates for pricing and should be confirmed by an architect.</p>
+  <div class="path-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+    <div class="path-card pa">
+      <div class="ph">
+        <div class="ptag">Pathway A &middot; As Entitled</div>
+        <div class="pname">Approved TOC Tier 4 Project</div>
+        <div class="punits">114 units (101 market rate)</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>Approved 8-story, 83-foot building with a vested Housing Crisis Act application and a full planning set.</li>
+        <li>Only 11% of units are affordable (13 ELI), the lowest set-aside of any pathway.</li>
+        <li>A buyer moves straight to building permits: the fastest start and the least entitlement risk.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Units</span><span class="v">114</span></div>
+      <div class="pmetric"><span class="l">Affordable</span><span class="v">11% ELI</span></div>
+      <div class="pmetric"><span class="l">Buyer</span><span class="v">Market-rate developer</span></div>
+    </div>
+    <div class="path-card pb">
+      <div class="ph">
+        <div class="ptag">Pathway B &middot; Mixed Income</div>
+        <div class="pname">CHIP Mixed Income (MIIP)</div>
+        <div class="punits">About 125 to 140 units</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>The site is in Transit Oriented Incentive Area 3, where MIIP replaces TOC with a larger density increase and ministerial review.</li>
+        <li>More units in a similar envelope, with a set-aside tied to the "High" market area.</li>
+        <li>A new filing, so replacement-unit review for the four homes applies.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Units</span><span class="v">~125-140</span></div>
+      <div class="pmetric"><span class="l">Approval</span><span class="v">Ministerial</span></div>
+      <div class="pmetric"><span class="l">Buyer</span><span class="v">Mixed-income developer</span></div>
+    </div>
+    <div class="path-card pc">
+      <div class="ph">
+        <div class="ptag">Pathway C &middot; State Law</div>
+        <div class="pname">Density Bonus + AB 1287</div>
+        <div class="punits">About 120 to 126 units</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>A 50% state bonus with 15% Very Low Income units, stacked with up to 50% more under AB 1287 by adding moderate or very low income units.</li>
+        <li>Incentives and waivers can carry the height and FAR the project needs.</li>
+        <li>Suits a builder who wants a state-law approval path or a for-sale (condo) version.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Units</span><span class="v">~120-126</span></div>
+      <div class="pmetric"><span class="l">Affordable</span><span class="v">~15-30%</span></div>
+      <div class="pmetric"><span class="l">Buyer</span><span class="v">Rental or condo builder</span></div>
+    </div>
+    <div class="path-card pd">
+      <div class="ph">
+        <div class="ptag">Pathway D &middot; 100% Affordable</div>
+        <div class="pname">ED 1 / CHIP Affordable (AHIP)</div>
+        <div class="punits">About 200 to 240 units</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>ZIMAS lists the site as an ED 1 Eligible Site, and its AB 2334 Very Low Vehicle Travel Area status lifts the density cap for a 100% affordable project.</li>
+        <li>Ministerial, expedited approval; TCAC High Opportunity Area supports tax-credit scoring.</li>
+        <li>Our 2600 S Robertson listing carries 149 ED 1 units on 16,220 SF, the same density this site would support at about 230 units.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Units</span><span class="v">~200-240</span></div>
+      <div class="pmetric"><span class="l">Affordable</span><span class="v">100%</span></div>
+      <div class="pmetric"><span class="l">Buyer</span><span class="v">ED 1 / tax-credit sponsor</span></div>
+    </div>
+  </div>
+  <div class="two-col" style="align-items:center;margin:18px 0">
+    <div>
+      <div class="img-frame" style="aspect-ratio:1140/538"><img src="images/2245_amherst_rendering.jpg" alt="Rendering of the 38-unit affordable building at 2245 S Amherst Ave"></div>
+      <div class="caption">2245 S Amherst Ave, one block north. Rendering via Urbanize LA.</div>
+    </div>
+    <div>
+      <h3 style="margin-top:0">ED 1 Is Already Building on This Street</h3>
+      <p>One block north, HVN Development is building a four-story, 38-unit, 100% affordable building at 2245 S Amherst Avenue under Executive Directive 1 with density bonus incentives, on what was a single-family lot just south of the Expo/Bundy station. Wood framing had topped out by September 2025, with completion expected in early 2026 (Urbanize LA, 09/16/2025). It shows affordable capital is already approving and building on this block.</p>
+    </div>
+  </div>
+  <h3>Pathways Side by Side</h3>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Pathway</th><th class="num">Units</th><th>Height</th><th>Affordable Set-Aside</th><th>Approval</th><th>Status</th></tr>
+    <tr><td>A &middot; Approved TOC Tier 4</td><td class="num">114</td><td>83 ft, 8 stories</td><td>13 ELI (11%)</td><td>Approved</td><td>Ready for permits</td></tr>
+    <tr><td>B &middot; CHIP MIIP (TOIA 3)</td><td class="num">~125-140</td><td>Incentive</td><td>Per High market tier</td><td>Ministerial</td><td>New filing</td></tr>
+    <tr><td>C &middot; Density Bonus + AB 1287</td><td class="num">~120-126</td><td>Incentive / waiver</td><td>~15-30%</td><td>Administrative</td><td>New filing</td></tr>
+    <tr><td>D &middot; ED 1 / AHIP</td><td class="num">~200-240</td><td>+3 stories (state law)</td><td>100%</td><td>Ministerial, expedited</td><td>New filing</td></tr>
+  </table>
+  </div>
+  <div class="info-callout"><strong>How to read these:</strong> Pathway A is what a buyer gets on day one: an approved building and the shortest path to construction, which is what most market-rate developers will pay for. Pathways B and C add roughly 10 to 25 units for a new filing. Pathway D roughly doubles the unit count with a 100% affordable building, the route ED 1 and tax-credit sponsors will underwrite. The price recommendation rests on Pathway A and is supported by Pathway D.</div>
+  <div class="info-callout"><strong>Diligence notes:</strong> ZIMAS flags Housing Element replacement review and housing use within the past five years, so any new filing may owe replacement affordable units for the four homes. The approved project's replacement terms should be confirmed from the determination letter. The site is in a liquefaction zone and carries the City's freeway-adjacent advisory notice (ZI-2427); it is outside flood, fire, fault and methane zones. SB 79 (state transit-oriented zoning) may also apply at this distance from the station; eligibility has not been determined.</div>
+</section>
+
+
+<section class="card" id="comps">
+  <h2>Land Sales Comparables</h2>
+  <p>Twenty closed development and redevelopment sites, recorded between April 2024 and August 2026, most within 1.5 miles. The three closest sales are on the subject's own street and the next block.</p>
+  <div class="img-frame" style="aspect-ratio:1280/840;margin-bottom:14px;background:#fff"><img src="images/comp_map.png" alt="Map of the subject and twenty land sale comparables" style="object-fit:contain"></div>
+  <div class="caption" style="margin-top:-6px;margin-bottom:10px">S is the subject. Comps 1 to 3 sit directly beside it on Amherst and Wellesley.</div>
+  <div class="table-scroll">
+  <table>
+    <tr><th>#</th><th>Address</th><th>Zoning</th><th class="num">Lot SF</th><th class="num">Sale Price</th><th class="num">$/Land SF</th><th>Closed</th><th class="num">Dist.</th></tr>
+    <tr><td>S</td><td class="addr"><b>2318-2332 S Amherst Ave (subject)</b></td><td>RAS4</td><td class="num">25,014</td><td class="num">$7,500,000</td><td class="num"><span class="psf">$299.83</span></td><td>Proposed</td><td class="num"></td></tr>
+    <tr><td>1</td><td class="addr">2339 Amherst Ave<br><span style="font-size:11.5px;color:#666">Across the street</span></td><td>R1*</td><td class="num">5,636</td><td class="num">$1,500,000</td><td class="num"><span class="psf">$266.15</span></td><td><span class="b-closed">Nov 2025</span></td><td class="num">0.04 mi</td></tr>
+    <tr><td>2</td><td class="addr">2219 Wellesley Ave</td><td>R1*</td><td class="num">6,250</td><td class="num">$1,675,000</td><td class="num"><span class="psf">$268.00</span></td><td><span class="b-closed">Aug 2025</span></td><td class="num">0.2 mi</td></tr>
+    <tr><td>3</td><td class="addr">2215 Wellesley Ave</td><td>R1*</td><td class="num">9,689</td><td class="num">$2,500,000</td><td class="num"><span class="psf">$258.02</span></td><td><span class="b-closed">Oct 2024</span></td><td class="num">0.2 mi</td></tr>
+    <tr><td>4</td><td class="addr">11570 W Olympic Blvd<br><span style="font-size:11.5px;color:#666">Use not confirmed</span></td><td>M2</td><td class="num">23,171</td><td class="num">$7,200,000</td><td class="num"><span class="psf">$310.73</span></td><td><span class="b-closed">Jun 2026</span></td><td class="num">0.5 mi</td></tr>
+    <tr><td>5</td><td class="addr">1800 S Bundy Dr</td><td>R3</td><td class="num">7,567</td><td class="num">$1,900,000</td><td class="num"><span class="psf">$251.09</span></td><td><span class="b-closed">Jun 2026</span></td><td class="num">0.6 mi</td></tr>
+    <tr><td>6</td><td class="addr">1928-1932 Federal Ave</td><td>R2</td><td class="num">12,191</td><td class="num">$3,295,000</td><td class="num"><span class="psf">$270.28</span></td><td><span class="b-closed">Feb 2026</span></td><td class="num">0.7 mi</td></tr>
+    <tr><td>7</td><td class="addr">1747 Stoner Ave<br><span style="font-size:11.5px;color:#666">53 units ($45,000/unit)</span></td><td>R3</td><td class="num">7,374</td><td class="num">$2,385,000</td><td class="num"><span class="psf">$323.43</span></td><td><span class="b-closed">Apr 2024</span></td><td class="num">0.7 mi</td></tr>
+    <tr><td>8</td><td class="addr">2470 Purdue Ave</td><td>R3</td><td class="num">7,500</td><td class="num">$1,950,000</td><td class="num"><span class="psf">$260.00</span></td><td><span class="b-closed">Feb 2025</span></td><td class="num">0.8 mi</td></tr>
+    <tr><td>9</td><td class="addr">2478 Purdue Ave</td><td>R3</td><td class="num">7,502</td><td class="num">$1,600,000</td><td class="num"><span class="psf">$213.28</span></td><td><span class="b-closed">Jun 2025</span></td><td class="num">0.8 mi</td></tr>
+    <tr><td>10</td><td class="addr">11970 Santa Monica Blvd</td><td>C2</td><td class="num">15,182</td><td class="num">$7,150,000</td><td class="num"><span class="psf hot">$470.95</span></td><td><span class="b-closed">Aug 2025</span></td><td class="num">1.0 mi</td></tr>
+    <tr><td>11</td><td class="addr">1463-1467 Wellesley Ave<br><span style="font-size:11.5px;color:#666">17 units on plans</span></td><td>R2</td><td class="num">15,523</td><td class="num">$3,920,000</td><td class="num"><span class="psf">$252.53</span></td><td><span class="b-closed">Aug 2026</span></td><td class="num">1.0 mi</td></tr>
+    <tr><td>12</td><td class="addr">1723 Corinth Ave<br><span style="font-size:11.5px;color:#666">42 units ($59,524/unit)</span></td><td>R3</td><td class="num">7,359</td><td class="num">$2,500,000</td><td class="num"><span class="psf">$339.72</span></td><td><span class="b-closed">Mar 2025</span></td><td class="num">1.0 mi</td></tr>
+    <tr><td>13</td><td class="addr">11161 W Pico Blvd<br><span style="font-size:11.5px;color:#666">Use not confirmed</span></td><td>M2</td><td class="num">19,860</td><td class="num">$3,500,000</td><td class="num"><span class="psf">$176.23</span></td><td><span class="b-closed">Dec 2025</span></td><td class="num">1.0 mi</td></tr>
+    <tr><td>14</td><td class="addr">2330 Pontius Ave<br><span style="font-size:11.5px;color:#666">Near Expo/Sepulveda</span></td><td>M2</td><td class="num">16,744</td><td class="num">$3,730,000</td><td class="num"><span class="psf">$222.77</span></td><td><span class="b-closed">Sep 2025</span></td><td class="num">1.0 mi</td></tr>
+    <tr><td>15</td><td class="addr">3252 S Barrington Ave</td><td>R3</td><td class="num">8,234</td><td class="num">$2,000,000</td><td class="num"><span class="psf">$242.90</span></td><td><span class="b-closed">Jun 2025</span></td><td class="num">1.2 mi</td></tr>
+    <tr><td>16</td><td class="addr">11010 W Pico Blvd</td><td>C2</td><td class="num">16,776</td><td class="num">$5,750,000</td><td class="num"><span class="psf hot">$342.75</span></td><td><span class="b-closed">May 2025</span></td><td class="num">1.2 mi</td></tr>
+    <tr><td>17</td><td class="addr">2319-2323 Westwood Blvd</td><td>C4</td><td class="num">13,213</td><td class="num">$5,000,000</td><td class="num"><span class="psf hot">$378.42</span></td><td><span class="b-closed">May 2025</span></td><td class="num">1.5 mi</td></tr>
+    <tr><td>18</td><td class="addr">2127 Westwood Blvd</td><td>C4</td><td class="num">10,806</td><td class="num">$4,250,000</td><td class="num"><span class="psf hot">$393.30</span></td><td><span class="b-closed">Mar 2026</span></td><td class="num">1.5 mi</td></tr>
+    <tr><td>19</td><td class="addr">10440 Eastborne Ave</td><td>R3</td><td class="num">7,150</td><td class="num">$2,100,000</td><td class="num"><span class="psf">$293.71</span></td><td><span class="b-closed">May 2025</span></td><td class="num">2.4 mi</td></tr>
+    <tr><td>20</td><td class="addr">12461 Louise Ave, Mar Vista<br><span style="font-size:11.5px;color:#666">60 units ED1 ($70,000/unit)</span></td><td>R3</td><td class="num">12,119</td><td class="num">$4,200,000</td><td class="num"><span class="psf hot">$346.56</span></td><td><span class="b-closed">Jun 2025</span></td><td class="num">2.8 mi</td></tr>
+    <tr class="avg"><td></td><td>Average (comps 1-20)</td><td></td><td class="num">11,492</td><td class="num">$3,405,250</td><td class="num">$294.04</td><td></td><td></td></tr>
+  </table>
+  </div>
+  <p class="fn">Prices, closing dates and lot sizes verified against LA County Assessor transfer records, October 2026. $/SF is the recorded price over assessor lot area. Zoning is the assessor's code; * marks parcels the Expo Corridor plan has since rezoned, so their assessor code understates current zoning. Comps 4 and 13 may have been bought for their existing use. Median of the set: $269.14 per SF; the nine sales within 0.8 miles average $269.00 per SF.</p>
+  <h3>Active Land Listings Nearby</h3>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Address</th><th class="num">Lot SF</th><th class="num">Asking</th><th class="num">$/Land SF</th><th>Notes</th><th class="num">Dist.</th></tr>
+    <tr><td>1656 Sawtelle Blvd <span class="b-laaa">LAAA Team Listing</span></td><td class="num">7,005</td><td class="num">$2,995,000</td><td class="num"><span class="psf hot">$427.55</span></td><td>Cleared; about 38 units via MIIP, about 52 with AHIP</td><td class="num">1.6 mi</td></tr>
+    <tr><td>10713-10725 Palms Blvd</td><td class="num">12,873</td><td class="num">$4,195,000</td><td class="num"><span class="psf">$325.88</span></td><td>Prior TOC approval for 28 units; advertised at two prices</td><td class="num">2.3 mi</td></tr>
+    <tr><td>2600 S Robertson Blvd <span class="b-laaa">LAAA Team Listing</span></td><td class="num">16,220</td><td class="num">$6,995,000</td><td class="num"><span class="psf hot">$431.26</span></td><td>149 ED 1 units approved ($46,946 per unit)</td><td class="num">3.4 mi</td></tr>
+  </table>
+  </div>
+  <p class="fn">Asking prices as advertised, October 2026; status to be confirmed with each listing broker.</p>
+</section>
+
+<section class="card" id="takeaways">
+  <h2>Key Takeaways</h2>
+  <div class="tk-grid">
+    <div class="tk"><span class="n">1</span><br><b>Unentitled lots on this block trade near $266 per SF.</b> The sale across the street closed at $266 per land SF in November 2025, and the two Wellesley lots behind it at $258 and $268, all as single-family lots with no approval.</div>
+    <div class="tk"><span class="n">2</span><br><b>An approval is worth a premium.</b> Entitled sites nearby sold for $45,000 to $70,000 per unit, but none had more than 60 units. This site offers 114 approved units and a vested application, which saves a buyer the entitlement time and risk.</div>
+    <div class="tk"><span class="n">3</span><br><b>Commercial-zoned sites price higher.</b> The seven sales with commercial or industrial zoning averaged $328 per SF. The subject's RAS4 zoning is a residential-commercial zone under the Expo plan.</div>
+    <div class="tk"><span class="n">4</span><br><b>A 100% affordable buyer can underwrite about twice the units.</b> As an ED 1 eligible site in a Very Low Vehicle Travel Area, the site supports roughly 200 to 240 affordable units, about $34,000 per unit at our recommended price. An ED 1 building is already rising one block north.</div>
+    <div class="tk"><span class="n">5</span><br><b>Measure ULA applies at any realistic price.</b> Above $5,400,000 the City's transfer tax is 4% of the full price; at $7,500,000 that is $300,000, paid by the seller unless negotiated otherwise.</div>
+  </div>
+</section>
+
+<section class="card" id="pricing">
+  <h2>Pricing Recommendation</h2>
+  <div class="recommend">
+    <div class="r-eyebrow">Recommended List Price</div>
+    <div class="r-band">$7,500,000</div>
+    <div class="r-sub">$299.83 per land SF on 25,014 SF &middot; $65,789 per approved unit on 114 units</div>
+  </div>
+  <div class="price-compare">
+    <div class="pc-box"><div class="l">As Entitled (Pathway A)</div><div class="v">$7.0M-$8.0M</div><div class="s">$280-$320 per SF &middot; $61,400-$70,200 per unit</div></div>
+    <div class="pc-box"><div class="l">Re-Entitled, 100% Affordable (D)</div><div class="v">$7.0M-$8.5M</div><div class="s">~$35,000-$40,000 per unit on ~200-240 units, before time and filing risk</div></div>
+    <div class="pc-box"><div class="l">Per Unit at List, ED 1</div><div class="v">~$34,100</div><div class="s">On ~220 units; 2600 S Robertson asks $46,946</div></div>
+    <div class="pc-box"><div class="l">Measure ULA at List</div><div class="v">$300,000</div><div class="s">4% of the full price above $5,400,000</div></div>
+  </div>
+  <p><b>As entitled.</b> Unentitled lots on the subject's block traded at $258 to $268 per SF over the past two years, and the nine sales within 0.8 miles averaged $269 per SF. A buyer here gets an approved 114-unit building, a vested application and a full planning set, so the site should trade above those lots. At $299.83 per SF and $65,789 per approved unit, the recommended price sits about 13% above the block's unentitled sales and within the $45,000 to $70,000 per unit range paid for smaller entitled sites nearby.</p>
+  <p><b>Re-entitled.</b> A tax-credit or ED 1 sponsor would underwrite about 200 to 240 units, or roughly $31,000 to $38,000 per unit at $7,500,000. That is below the $46,946 per unit asked for our 149-unit ED 1 site at 2600 S Robertson and the $70,000 per unit paid for 12461 Louise in Mar Vista. That buyer pool supports the price, but it must file and wait for a new approval, so we would not price above the as-entitled range to reach it. The re-entitled view is the reason to expect competition at list, not a reason to ask more.</p>
+  <p>Final pricing depends on two items we still need: confirmation that all four lots convey (two are held by family trusts) and the approval and expiration dates in the TOC determination letter.</p>
+</section>
+
+<section class="card" id="marketing">
+  <h2>Marketing Reach</h2>
+  <p>Every LAAA Team exclusive listing is syndicated across 10 listing platforms, backed by direct outreach to our database of multifamily developers, affordable housing sponsors, tax-credit developers and institutional users.</p>
+  <div class="plat-strip">
+    <span class="plat">The MLS</span>
+    <span class="plat">CoStar / LoopNet</span>
+    <span class="plat">Crexi</span>
+    <span class="plat">Brevitas</span>
+    <span class="plat">Zillow</span>
+    <span class="plat">Redfin</span>
+    <span class="plat">ApartmentBuildings.com</span>
+    <span class="plat">Duxre</span>
+    <span class="plat">MarcusMillichap.com</span>
+    <span class="plat">www.laaa.com</span>
+  </div>
+</section>
+
+<section class="card" id="listings">
+  <h2>Also Marketed by the LAAA Team</h2>
+  <p>The LAAA Team is currently marketing 8 land and development-site listings across Southern California. Each card links to the full offering at www.laaa.com.</p>
+  <div class="inv-grid">
+    <a class="inv-item" href="https://www.laaa.com/om/5151-e-arrow" target="_blank" rel="noopener"><span class="addr">5151 E Arrow Hwy</span><span class="city">Montclair</span><span class="price">$10,250,000</span><span class="facts">300 buildable units &middot; 260,271 SF (5.97 ac)</span><span class="desc">Unentitled 300-unit mixed-density apartment and townhome site in the North Montclair Downtown Specific Plan.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/2600-s-robertson" target="_blank" rel="noopener"><span class="addr">2600 S Robertson Blvd</span><span class="city">Los Angeles</span><span class="price">$6,995,000</span><span class="facts">149 entitled units &middot; 16,220 SF</span><span class="desc">ED1 100% affordable mixed-use approval, 149 units over ground-floor retail at a 3.9:1 FAR.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/185-monterey" target="_blank" rel="noopener"><span class="addr">185 Monterey Rd</span><span class="city">South Pasadena</span><span class="price">$7,000,000</span><span class="facts">53 entitled units &middot; 54,794 SF (1.26 ac)</span><span class="desc">Fully entitled 53-unit condominium development, tract map approved June 2026.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/12335-osborne" target="_blank" rel="noopener"><span class="addr">12335 Osborne Pl</span><span class="city">Pacoima</span><span class="price">$3,950,000</span><span class="facts">293 RTI units &middot; 46,035 SF (1.06 ac)</span><span class="desc">Ready-to-Issue 293-unit ED1 affordable development in an Opportunity Zone, zero required parking.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/13840-sherman" target="_blank" rel="noopener"><span class="addr">13840 Sherman Way</span><span class="city">Van Nuys</span><span class="price">$3,500,000</span><span class="facts">86 RTI units &middot; 1.05 acres</span><span class="desc">AB 2334 density bonus affordable site delivered Ready-to-Issue at close of escrow, no parking required.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/1656-sawtelle" target="_blank" rel="noopener"><span class="addr">1656 Sawtelle Blvd</span><span class="city">Los Angeles</span><span class="price">$2,995,000</span><span class="facts">38 buildable units, up to ~52 with bonus &middot; 7,005 SF</span><span class="desc">Cleared, unentitled West LA (Little Osaka) apartment site, ~38 units via MIIP, ~52 via AB 1287/AHIP.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/631-637-w-6th" target="_blank" rel="noopener"><span class="addr">631-637 W 6th Street</span><span class="city">San Pedro</span><span class="price">$1,475,000</span><span class="facts">10 buildable units &middot; 13,799 SF</span><span class="desc">Two-parcel by-right site: SB 1123 for-sale subdivision or duplexes plus ADUs.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/6901-woodman" target="_blank" rel="noopener"><span class="addr">6901 Woodman Avenue</span><span class="city">Van Nuys</span><span class="price">$1,400,000</span><span class="facts">55 RTI units &middot; 10,005 SF</span><span class="desc">RTI 55-unit ED1/TOC affordable land, permits ready to pull.</span><span class="go">View Listing</span></a>
+  </div>
+  <p class="fn">Active laaa.com land listings as of October 27, 2026, excluding properties in escrow.</p>
+</section>
+
+
+<section class="card" id="team">
+  <h2>The LAAA Team</h2>
+  <div class="team-leaders">
+    <div class="leader">
+      <img class="headshot-img-lg" src="images/headshot_filip-niculete.jpg" alt="Filip Niculete">
+      <div class="nm">Filip Niculete</div>
+      <div class="tt">Senior Managing Director Investments</div>
+      <div class="ct">(818) 212-2748 &middot; CA DRE 01905352</div>
+    </div>
+    <div class="leader">
+      <img class="headshot-img-lg" src="images/headshot_glen-scher.jpg" alt="Glen Scher">
+      <div class="nm">Glen Scher</div>
+      <div class="tt">Senior Managing Director Investments</div>
+      <div class="ct">(818) 212-2808 &middot; CA DRE 01962976</div>
+    </div>
+  </div>
+  <div class="team-roster">
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_aida-memary-scher.jpg" alt="Aida Memary Scher"><div class="nm">Aida Memary Scher</div><div class="tt">Associate Director Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_morgan-wetmore.jpg" alt="Morgan Wetmore"><div class="nm">Morgan Wetmore</div><div class="tt">Associate</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_alexandro-tapia.jpg" alt="Alexandro Tapia"><div class="nm">Alexandro Tapia</div><div class="tt">Associate Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_logan-ward.jpg" alt="Logan Ward"><div class="nm">Logan Ward</div><div class="tt">Associate Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_luka-leader.jpg" alt="Luka Leader"><div class="nm">Luka Leader</div><div class="tt">Associate Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_blake-lewitt.jpg" alt="Blake Lewitt"><div class="nm">Blake Lewitt</div><div class="tt">Associate Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_mike-palade.jpg" alt="Mike Palade"><div class="nm">Mike Palade</div><div class="tt">Agent Assistant</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_tony-dang.jpg" alt="Tony H. Dang"><div class="nm">Tony H. Dang</div><div class="tt">Business Operations Manager</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_tirajeh-vossoughi-horton.jpg" alt="Tirajeh Vossoughi-Horton"><div class="nm">Tirajeh Vossoughi-Horton</div><div class="tt">Investment Brokerage Intern</div></div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-title">Marcus &amp; Millichap | The LAAA Team</div>
+    <p>16830 Ventura Blvd, Suite 100, Encino, CA 91436 &middot; www.laaa.com</p>
+    <p>This Broker Opinion of Value is not an appraisal and has been prepared for the exclusive use of the party to whom it is addressed. The information contained herein was obtained from sources we believe to be reliable; however, Marcus &amp; Millichap makes no guarantee, warranty, or representation as to its accuracy or completeness. Development potential, unit counts, and program eligibility are planning-level estimates only and must be independently verified with the City of Los Angeles, an architect, and land-use counsel. Map and aerial imagery &copy; Google.</p>
+  </div>
+</footer>
+
+</body>
+</html>
